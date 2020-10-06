@@ -1,0 +1,6 @@
+D:\MezunSistemi.Data.Model\bin\Debug\MezunSistemi.Data.Model.dll
+D:\MezunSistemi.Data.Model\bin\Debug\MezunSistemi.Data.Model.pdb
+D:\MezunSistemi.Data.Model\obj\Debug\MezunSistemi.Data.Model.csprojAssemblyReference.cache
+D:\MezunSistemi.Data.Model\obj\Debug\MezunSistemi.Data.Model.dll
+D:\MezunSistemi.Data.Model\obj\Debug\MezunSistemi.Data.Model.pdb
+D:\MezunSistemi.Data.Model\obj\Debug\MezunSistemi.Data.Model.csproj.CoreCompileInputs.cache

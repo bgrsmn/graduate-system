@@ -1,0 +1,72 @@
+﻿
+@{
+    ViewBag.Title = "Firma";
+}
+@using MezunSistemi.Data.Model
+@model List<Firma>
+
+<h2>FİRMA</h2>
+
+<form action="/Firma/Ekle" method="get">
+    Firma Adı:<br>
+    <input type="text" name="ad" value="">
+    <br>
+    Firma Alan:<br>
+    <input type="text" name="alan" value="">
+    <br>
+    Firma Tel:<br>
+    <input type="text" name="tel" value="">
+    <br>
+    Firma Mail:<br>
+    <input type="text" name="mail" value="">
+    <br>
+    Firma Sorumlu:<br>
+    <input type="text" name="sorumlu" value="">
+    <br>
+    <br>
+    <input type="submit" value="Ekle">
+</form>
+
+<hr />
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Alan</th>
+            <th>Tel</th>
+            <th>Mail</th>
+            <th>Sorumlu</th>
+            <th>FirmaId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var frm in Model)
+        {
+            <tr>
+                <td>@frm.Ad</td>
+                <td>@frm.Alan</td>
+                <td>@frm.Tel</td>
+                <td>@frm.Mail</td>
+                <td>@frm.Sorumlu</td>
+                <td>@frm.Id</td>
+                <td><button class="frmguncelle btn btn-primary" value="@frm.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@frm.Id">Sil</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Ad</th>
+            <th>Alan</th>
+            <th>Tel</th>
+            <th>Mail</th>
+            <th>Sorumlu</th>
+            <th>FirmaId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>
+

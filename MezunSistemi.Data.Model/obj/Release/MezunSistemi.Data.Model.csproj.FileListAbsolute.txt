@@ -1,0 +1,5 @@
+D:\MezunSistemi.Data.Model\bin\Release\MezunSistemi.Data.Model.dll
+D:\MezunSistemi.Data.Model\bin\Release\MezunSistemi.Data.Model.pdb
+D:\MezunSistemi.Data.Model\obj\Release\MezunSistemi.Data.Model.csprojAssemblyReference.cache
+D:\MezunSistemi.Data.Model\obj\Release\MezunSistemi.Data.Model.dll
+D:\MezunSistemi.Data.Model\obj\Release\MezunSistemi.Data.Model.pdb

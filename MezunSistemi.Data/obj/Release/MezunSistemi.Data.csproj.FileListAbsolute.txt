@@ -1,0 +1,13 @@
+D:\MezunSistemi.Data\bin\Release\MezunSistemi.Data.dll.config
+D:\MezunSistemi.Data\bin\Release\MezunSistemi.Data.dll
+D:\MezunSistemi.Data\bin\Release\MezunSistemi.Data.pdb
+D:\MezunSistemi.Data\bin\Release\EntityFramework.dll
+D:\MezunSistemi.Data\bin\Release\EntityFramework.SqlServer.dll
+D:\MezunSistemi.Data\bin\Release\MezunSistemi.Data.Model.dll
+D:\MezunSistemi.Data\bin\Release\MezunSistemi.Data.Model.pdb
+D:\MezunSistemi.Data\bin\Release\EntityFramework.xml
+D:\MezunSistemi.Data\bin\Release\EntityFramework.SqlServer.xml
+D:\MezunSistemi.Data\obj\Release\MezunSistemi.Data.csprojAssemblyReference.cache
+D:\MezunSistemi.Data\obj\Release\MezunSistemi.Data.csproj.CopyComplete
+D:\MezunSistemi.Data\obj\Release\MezunSistemi.Data.dll
+D:\MezunSistemi.Data\obj\Release\MezunSistemi.Data.pdb

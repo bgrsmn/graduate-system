@@ -1,0 +1,14 @@
+D:\MezunSistemi.Data\bin\Debug\MezunSistemi.Data.dll.config
+D:\MezunSistemi.Data\bin\Debug\MezunSistemi.Data.dll
+D:\MezunSistemi.Data\bin\Debug\MezunSistemi.Data.pdb
+D:\MezunSistemi.Data\bin\Debug\EntityFramework.dll
+D:\MezunSistemi.Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\MezunSistemi.Data\bin\Debug\MezunSistemi.Data.Model.dll
+D:\MezunSistemi.Data\bin\Debug\MezunSistemi.Data.Model.pdb
+D:\MezunSistemi.Data\bin\Debug\EntityFramework.xml
+D:\MezunSistemi.Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\MezunSistemi.Data\obj\Debug\MezunSistemi.Data.csprojAssemblyReference.cache
+D:\MezunSistemi.Data\obj\Debug\MezunSistemi.Data.csproj.CopyComplete
+D:\MezunSistemi.Data\obj\Debug\MezunSistemi.Data.dll
+D:\MezunSistemi.Data\obj\Debug\MezunSistemi.Data.pdb
+D:\MezunSistemi.Data\obj\Debug\MezunSistemi.Data.csproj.CoreCompileInputs.cache
