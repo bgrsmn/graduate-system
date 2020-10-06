@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "Mezun";
+}
+@using MezunSistemi.Data.Model;
+@model dynamic
+
+    <ul>
+        @foreach (Firma frm in Model.Firmalar)
+        {
+            <li>@frm.Ad</li>
+        }
+    </ul>
+
+
+<h2>MEZUN</h2>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Tel</th>
+            <th>Eposta</th>
+            <th>Firma</th>
+            <th>Pozısyon</th>
+            <th>Calısma Alanı</th>
+            <th>Yabancı Dil</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (Mezun mzn in Model.Mezunlar)
+        {
+            <tr>
+                <td>@mzn.Ad</td>
+                <td>@mzn.Soyad</td>
+                <td>@mzn.Tel</td>
+                <td>@mzn.Eposta</td>
+                <td>@mzn.Firma.Ad</td>
+                <td>@mzn.Pozısyon.Ad</td>
+                <td>@mzn.CalısmaAlanları.Ad</td>
+                <td>@mzn.YabancıDil</td>
+                <td><button class="guncelle btn btn-primary" value="@mzn.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@mzn.Id">Sil</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+
+            <th>Ad</th>
+            <th>Soyad</th>
+            <th>Tel</th>
+            <th>Eposta</th>
+            <th>FirmaId</th>
+            <th>PozısyonId</th>
+            <th>CalısmaAlanıId</th>
+            <th>YabancıDil</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>
+

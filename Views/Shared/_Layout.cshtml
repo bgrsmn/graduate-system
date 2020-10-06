@@ -1,0 +1,336 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+
+
+    <link href="~/Content/Css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/Css/sidebar-nav.min.css" rel="stylesheet" />
+    <link href="~/Content/Css/jquery-jvectormap-2.0.2.css" rel="stylesheet" />
+    <link href="~/Content/Css/css-chart.css" rel="stylesheet" />
+    <link href="~/Content/Css/animate.css" rel="stylesheet" />
+    <link href="~/Content/Css/style.css" rel="stylesheet" />
+    <link href="~/Content/Css/blue-dark.css" rel="stylesheet" />
+    <link href="~/Content/Css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Content/Css/buttons.dataTables.min.css" rel="stylesheet" />
+    <link href="~/Content/Css/sweetalert2.min.css" rel="stylesheet" />
+    <style>
+        tfoot input {
+            width: 100%;
+            padding: 3px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="cssload-speeding-wheel"></div>
+    </div>
+    <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-static-top m-b-0">
+            <div class="navbar-header">
+                <a class="navbar-toggle hidden-sm hidden-md hidden-lg " href="javascript:void(0)" data-toggle="collapse" data-target=".navbar-collapse"><i class="ti-menu"></i></a>
+                <div class="top-left-part">
+                    <a class="logo" href="index.html">
+                        <b>
+                            <img src="~/Content/İmage/indir_68x25.jpg" />
+                        </b><span class="hidden-xs">
+
+
+
+                            <img src="~/Content/İmage/images (1)_140x40.jpg" />
+                        </span>
+                    </a>
+                </div>
+                <ul class="nav navbar-top-links navbar-left hidden-xs">
+                    <li><a href="javascript:void(0)" class="open-close hidden-xs waves-effect waves-light"><i class="icon-arrow-left-circle ti-menu"></i></a></li>
+                </ul>
+                <ul class="nav navbar-top-links navbar-right pull-right">
+                    <!-- /.dropdown -->
+                    <li class="dropdown">
+                        <a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#"> <img src="~/Content/İmage/User_icon_BLACK-01.png" alt="user-img" width="36" class="img-circle"><b class="hidden-xs">Buğra</b> </a>
+                        <ul class="dropdown-menu dropdown-user animated flipInY">
+                            <li><a href="#"><i class="ti-user"></i> Profilim</a></li>
+                            <li><a href="#"><i class="ti-wallet"></i> Bağlantılar</a></li>
+                            <li><a href="#"><i class="ti-email"></i> Mail Box</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="ti-settings"></i> Hesap Ayarları</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><i class="fa fa-power-off"></i> Çıkış</a></li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                    <!-- .Megamenu -->
+                    <li class="mega-dropdown">
+                        <ul class="dropdown-menu mega-dropdown-menu animated bounceInDown">
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Forms Elements</li>
+                                    <li><a href="form-basic.html">Basic Forms</a></li>
+                                    <li><a href="form-layout.html">Form Layout</a></li>
+                                    <li><a href="form-advanced.html">Form Addons</a></li>
+                                    <li><a href="form-material-elements.html">Form Material</a></li>
+                                    <li><a href="form-upload.html">File Upload</a></li>
+                                    <li><a href="form-mask.html">Form Mask</a></li>
+                                    <li><a href="form-validation.html">Form Validation</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Advance Forms</li>
+                                    <li><a href="form-dropzone.html">File Dropzone</a></li>
+                                    <li><a href="form-pickers.html">Form-pickers</a></li>
+                                    <li><a href="form-wizard.html">Form-wizards</a></li>
+                                    <li><a href="form-typehead.html">Typehead</a></li>
+                                    <li><a href="form-xeditable.html">X-editable</a></li>
+                                    <li><a href="form-summernote.html">Summernote</a></li>
+                                    <li><a href="form-bootstrap-wysihtml5.html">Bootstrap wysihtml5</a></li>
+                                    <li><a href="form-tinymce-wysihtml5.html">Tinymce wysihtml5</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Table Example</li>
+                                    <li><a href="basic-table.html">Basic Tables</a></li>
+                                    <li><a href="data-table.html">Data Table</a></li>
+                                    <li><a href="bootstrap-tables.html">Bootstrap Tables</a></li>
+                                    <li><a href="responsive-tables.html">Responsive Tables</a></li>
+                                    <li><a href="editable-tables.html">Editable Tables</a></li>
+                                    <li><a href="foo-tables.html">FooTables</a></li>
+                                    <li><a href="jsgrid.html">JsGrid Tables</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-3">
+                                <ul>
+                                    <li class="dropdown-header">Charts</li>
+                                    <li> <a href="flot.html">Flot Charts</a> </li>
+                                    <li><a href="morris-chart.html">Morris Chart</a></li>
+                                    <li><a href="chart-js.html">Chart-js</a></li>
+                                    <li><a href="peity-chart.html">Peity Charts</a></li>
+                                    <li><a href="sparkline-chart.html">Sparkline charts</a></li>
+                                    <li><a href="extra-charts.html">Extra Charts</a></li>
+                                </ul>
+                            </li>
+                            <li class="col-sm-12 m-t-40 demo-box">
+                                <div class="row">
+                                    <div class="col-sm-2"><div class="white-box text-center bg-purple"><a href="http://themedesigner.in/demo/eliteadmin-package/eliteadmin-inverse/index.html" target="_blank" class="text-white"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i><br />Demo 1</a></div></div>
+                                    <div class="col-sm-2"><div class="white-box text-center bg-success"><a href="http://themedesigner.in/demo/eliteadmin-package/eliteadmin/index.html" target="_blank" class="text-white"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i><br />Demo 2</a></div></div>
+                                    <div class="col-sm-2"><div class="white-box text-center bg-info"><a href="http://themedesigner.in/demo/eliteadmin-package/eliteadmin-ecommerce/index.html" target="_blank" class="text-white"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i><br />Demo 3</a></div></div>
+                                    <div class="col-sm-2"><div class="white-box text-center bg-inverse"><a href="http://themedesigner.in/demo/eliteadmin-package/eliteadmin-horizontal-navbar/index3.html" target="_blank" class="text-white"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i><br />Demo 4</a></div></div>
+                                    <div class="col-sm-2"><div class="white-box text-center bg-warning"><a href="http://themedesigner.in/demo/eliteadmin-package/eliteadmin-iconbar/index4.html" target="_blank" class="text-white"><i class="linea-icon linea-basic fa-fw" data-icon="v"></i><br />Demo 5</a></div></div>
+                                    <div class="col-sm-2"><div class="white-box text-center bg-danger"><a href="https://themeforest.net/item/elite-admin-responsive-web-app-kit-/16750820" target="_blank" class="text-white"><i class="linea-icon linea-ecommerce fa-fw" data-icon="d"></i><br />Buy Now</a></div></div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /.Megamenu -->
+                    <!-- /.dropdown -->
+                </ul>
+            </div>
+            <!-- /.navbar-header -->
+            <!-- /.navbar-top-links -->
+            <!-- /.navbar-static-side -->
+        </nav>
+        <!-- Left navbar-header -->
+        <div class="navbar-default sidebar" role="navigation">
+            <div class="sidebar-nav navbar-collapse slimscrollsidebar">
+                <ul class="nav" id="side-menu">
+                    <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+                        <!-- input-group -->
+                        <div class="input-group custom-search-form">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+                            </span>
+                        </div>
+                        <!-- /input-group -->
+                    </li>
+                    <li class="user-pro">
+                        <a href="#" class="waves-effect"><img src="~/Content/İmage/User_icon_BLACK-01.png" alt="user-img" class="img-circle"> <span class="hide-menu"> Buğra<span class="fa arrow"></span></span></a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="javascript:void(0)"><i class="ti-user"></i>Profilim</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-wallet"></i>Bağlantılar</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-email"></i>Mail Box</a></li>
+                            <li><a href="javascript:void(0)"><i class="ti-settings"></i>Hesap Ayarları</a></li>
+                            <li><a href="javascript:void(0)"><i class="fa fa-power-off"></i>Çıkış</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-small-cap m-t-10">~~MENÜLER~~</li>
+                    <li>
+                        <a href="index.html" class="waves-effect active"><img src="~/Content/İmage/server-interface-symbol.png" /> İstatistikler</a>
+                        <ul class="nav nav-second-level">
+                            <li> <a href="index.html">En Çok İş İlanı Veren Mezun</a> </li>
+                            <li> <a href="index2.html">En Çok Staj İlanı Veren Mezun</a> </li>
+
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Mezun" class="waves-effect"><img src="~/Content/İmage/graduate-cap.png" /> Mezun</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/Mezun">Mezunlar Listesi</a></li>
+                            <li><a class="mznEkle" href="javascript:void(0)">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/open-book.png" /> Eğitim Bilgileri</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/EğitimBilgileri">EğitimBilgileri Listesi</a></li>
+                            <li><a class="/EğitimBilgileri/Ekle" href="javascript:void(0)">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/quality.png" /> Sertifika Bilgileri</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/SertifikaBilgileri">SerfikaBilgileri Listesi</a></li>
+                            <li><a class="/SertifikaBilgileri/Ekle" href="javascript:void(0)">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/man-working-on-a-laptop-from-side-view.png" /> Çalışma Bilgileri</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/ÇalışmaBilgileri">Çalışma Bilgileri Listesi</a></li>
+                            <li><a href="/Çalışma Bilgileri/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="/Firma" class="waves-effect"><img src="~/Content/İmage/factory.png" /> Firma Bilgileri</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/Firma">Firma Listesi</a></li>
+                            <li><a href="/Firma/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/military-rank.png" /> Pozisyonlar</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/Pozisyon">Pozisyonlar Listesi</a></li>
+                            <li><a href="/Pozisyon/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/workspace.png" /> Çalışma Alanları</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/ÇalışmaAlanları">ÇalışmaAlanları Listesi</a></li>
+                            <li><a href="/ÇalışmaAlanları/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/follower.png" /> Takipleşme</a>
+                        <ul class="nav nav-second-level">
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"> <img src="~/Content/İmage/megaphone.png" /> İlanlar</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/İlanlar">İlanlar Listesi</a></li>
+                            <li><a href="/İlanlar/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/chat.png" /> Yorumlar</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/Yorumlar">Yorumlar Listesi</a></li>
+                            <li><a href="/Yorumlar/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/survey.png" /> Anketler</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/Anketler">Anketler Listesi</a></li>
+                            <li><a href="/Anketler/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="inbox.html" class="waves-effect"><img src="~/Content/İmage/envelope.png" /> Mesajlar</a>
+                        <ul class="nav nav-second-level">
+                            <li><a href="/Mesajlar">Mesajlar Listesi</a></li>
+                            <li><a href="/Mesajlar/Ekle">Ekle</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Left navbar-header end -->
+        <!-- Page Content -->
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <div class="row bg-title">
+                    <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+                        <h4 class="page-title">Mezun</h4>
+                    </div>
+                    <div class="col-lg-9 col-sm-8 col-md-8 col-xs-12">
+                        <ol class="breadcrumb">
+                        </ol>
+                    </div>
+                    <!-- /.col-lg-12 -->
+                </div>
+                <div class="row white-box">
+                    @RenderBody()
+                </div>
+                <!-- /.container-fluid -->
+                <footer class="footer text-center"> 2019 &copy; BugraSısman </footer>
+            </div>
+            <!-- /#page-wrapper -->
+        </div>
+        <!-- /#wrapper -->
+        <script src="~/Scripts/jquery.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+        <script src="~/Scripts/sidebar-nav.min.js"></script>
+        <script src="~/Scripts/jquery.slimscroll.js"></script>
+        <script src="~/Scripts/waves.js"></script>
+        <script src="~/Scripts/jquery.flot.js"></script>
+        <script src="~/Scripts/jquery.sparkline.min.js"></script>
+        <script src="~/Scripts/jquery.easypiechart.min.js"></script>
+        <script src="~/Scripts/easy-pie-chart.init.js"></script>
+        <script src="~/Scripts/custom.js"></script>
+        <script src="~/Scripts/dashboard2.js"></script>
+        <script src="~/Scripts/jQuery.style.switcher.js"></script>
+        <script src="~/Scripts/jquery.dataTables.min.js"></script>
+        <script src="~/Scripts/buttons.flash.min.js"></script>
+        <script src="~/Scripts/dataTables.buttons.min.js"></script>
+        <script src="~/Scripts/jszip.min.js"></script>
+        <script src="~/Scripts/pdfmake.min.js"></script>
+        <script src="~/Scripts/vfs_fonts.js"></script>
+        <script src="~/Scripts/buttons.html5.min.js"></script>
+        <script src="~/Scripts/buttons.print.min.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                // Setup - add a text input to each footer cell
+                $('#example tfoot th').each(function () {
+                    var title = $(this).text();
+                    $(this).html('<input type="text" placeholder="Search ' + title + '" />');
+                });
+
+                // JQDataTable
+                var table = $('#example').DataTable({
+                    dom: 'Bfrtip',
+                    buttons: [
+                        'copy', 'csv', 'excel', 'pdf', 'print'
+                    ]
+                });
+                // Apply the search
+                table.columns().every(function () {
+                    var that = this;
+
+                    $('input', this.footer()).on('keyup change clear', function () {
+                        if (that.search() !== this.value) {
+                            that
+                                .search(this.value)
+                                .draw();
+                        }
+                    });
+                });
+            });
+        </script>
+        <script src="~/Scripts/sweetalert2.min.js"></script>
+        <script src="~/Scripts/Main.js"></script>
+        <script src="~/Scripts/FirmaIslemleri.js"></script>
+    </div>
+</body>
+</html>

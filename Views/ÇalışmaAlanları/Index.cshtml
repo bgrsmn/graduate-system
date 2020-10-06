@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "ÇalışmaAlanları";
+}
+@using MezunSistemi.Data.Model
+@model List<ÇalışmaAlanları>
+
+<h2>ÇALIŞMA ALANLARI</h2>
+
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Etiket</th>
+            <th>Acıklama</th>
+            <th>ÇalışmaAlanId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var çal in Model)
+        {
+            <tr>
+                <td>@çal.Ad</td>
+                <td>@çal.Etiket</td>
+                <td>@çal.Acıklama</td>            
+                <td>@çal.Id</td>
+                <td><button class="guncelle btn btn-primary" value="@çal.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@çal.Id">Sil</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Ad</th>
+            <th>Etiket</th>
+            <th>Acıklama</th>
+            <th>ÇalışmaAlanId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>

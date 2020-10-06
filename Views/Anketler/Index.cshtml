@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "Anket";
+}
+@using MezunSistemi.Data.Model
+@model List<Anketler>
+
+
+<h2>ANKETLER</h2>
+
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>AnketIcerıgı</th>
+            <th>AnketId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var akt in Model)
+        {
+            <tr>
+                <td><input type="submit" value="@akt.AnketIcerıgı" onclick="window.location='https://docs.google.com/forms/d/e/1FAIpQLScpEoAOA70ZAlRfHrMhLYRbyVrmCYBp6WcafhA2L2fAdHJO7A/viewform';" /></td>
+                <td>@akt.Id</td>
+                <td><button class="guncelle btn btn-primary" value="@akt.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@akt.Id">Sil</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>AnketIcerıgı</th>
+            <th>AnketId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+</tfoot>
+</table>

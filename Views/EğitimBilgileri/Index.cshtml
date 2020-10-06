@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "EğitimBilgileri";
+}
+@using MezunSistemi.Data.Model
+@model List<EğitimBilgileri>
+<h2>EĞİTİM BİLGİLERİ</h2>
+
+
+
+
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Okul</th>
+            <th>Mezuniyet Tarihi</th>
+            <th>Bölümü</th>
+            <th>Ortalaması</th>   
+            <th>EğitimBilgileriId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var egt in Model)
+        {
+            <tr>
+                <td>@egt.Okul</td>
+                <td>@egt.MezunıyetTarıhı</td>
+                <td>@egt.Bolumu</td>
+                <td>@egt.Ortalama</td>
+                <td>@egt.Id</td>
+                <td><button class="guncelle btn btn-primary" value="@egt.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@egt.Id">Sil</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Okul</th>
+            <th>Mezuniyet Tarihi</th>
+            <th>Bölümü</th>
+            <th>Ortalaması</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>
+
+

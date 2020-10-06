@@ -1,0 +1,47 @@
+﻿
+@{
+    ViewBag.Title = "Pozisyon";
+}
+@using MezunSistemi.Data.Model
+@model List<Pozisyon>
+
+
+<h2>POZİSYON</h2>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Ad</th>
+            <th>Etıket</th>
+            <th>Acıklama</th>
+            <th>PozisyonId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var pzy in Model)
+        {
+            <tr>
+                <td>@pzy.Ad</td>
+                <td>@pzy.Etıket</td>
+                <td>@pzy.Acıklama</td>
+                <td>@pzy.Id</td>
+                <td><button class="guncelle btn btn-primary" value="@pzy.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@pzy.Id">Sil</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Ad</th>
+            <th>Etıket</th>
+            <th>Acıklama</th>
+            <th>PozisyonId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>
+
+

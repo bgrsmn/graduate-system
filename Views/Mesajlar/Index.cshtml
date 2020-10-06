@@ -1,0 +1,43 @@
+﻿
+@{
+    ViewBag.Title = "Mesajlar";
+}
+
+<h2>MESAJLAR</h2>
+
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Icerık</th>
+            <th>Tarıh</th>
+            <th>Saat</th>
+            <th>MesajId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var msj in Model)
+        {
+            <tr>
+                <td>@msj.Icerık</td>
+                <td>@msj.Tarıh</td>
+                <td>@msj.Saat</td>
+                <td>@msj.Id</td>
+                <td><button class="guncelle btn btn-primary" value="@msj.Id">Güncelle</button></td>
+                <td><button class="sil btn btn-danger" value="@msj.Id">Sil</button></td>
+            </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Icerık</th>
+            <th>Tarıh</th>
+            <th>Saat</th>
+            <th>MesajId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>

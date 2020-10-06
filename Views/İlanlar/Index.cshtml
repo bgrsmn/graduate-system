@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewBag.Title = "İlanlar";
+}
+@using MezunSistemi.Data.Model
+@model List<İlanlar>
+
+
+<h2>İLANLAR</h2>
+
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+        <tr>
+            <th>Baslık</th>
+            <th>Acıklama</th>
+            <th>IlanTarıhı</th>
+            <th>GecerlılıkSuresı</th>
+            <th>Tür</th>
+            <th>Sure</th>
+            <th>Donem</th>
+            <th>İlanId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var ıln in Model)
+        {
+        <tr>
+            <td>@ıln.Baslık</td>
+            <td>@ıln.Acıklama</td>
+            <td>@ıln.IlanTarıhı</td>
+            <td>@ıln.GecerlılıkSuresı</td>
+            <td>@ıln.Tür</td>
+            <td>@ıln.Sure</td>
+            <td>@ıln.Donem</td>
+            <td>@ıln.Id</td>
+            <td><button class="guncelle btn btn-primary" value="@ıln.Id">Güncelle</button></td>
+            <td><button class="sil btn btn-danger" value="@ıln.Id">Sil</button></td>
+        </tr>
+        }
+    </tbody>
+    <tfoot>
+        <tr>
+            <th>Baslık</th>
+            <th>Acıklama</th>
+            <th>IlanTarıhı</th>
+            <th>GecerlılıkSuresı</th>
+            <th>Tür</th>
+            <th>Sure</th>
+            <th>Donem</th>
+            <th>İlanId</th>
+            <th>Güncelle</th>
+            <th>Sil</th>
+        </tr>
+    </tfoot>
+</table>
